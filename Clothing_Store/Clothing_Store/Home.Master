@@ -2,311 +2,405 @@
 
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
-    <title>Home | Clothing Store</title>
-    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="/css/font-awesome.min.css" rel="stylesheet"/>
-    <link href="/css/prettyPhoto.css" rel="stylesheet"/>
-    <link href="/css/price-range.css" rel="stylesheet"/>
-    <link href="/css/animate.css" rel="stylesheet"/>
-	<link href="/css/main.css" rel="stylesheet"/>
-	<link href="/css/responsive.css" rel="stylesheet"/>     
-    <link rel="shortcut icon" href="images/ico/favicon.ico"/>
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png"/>
+    <title></title>
+
+
+    <link href="css/trangchucss.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   
+    <link href="css/reset.css" rel="stylesheet" />
+    <link rel="SHORTCUT ICON" href="images/logo-title.png" type="image/x-icon" />
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/slick-theme.css" rel="stylesheet" />
+    <link href="css/style2.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/ct-style.css" rel="stylesheet" />
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <%--<script src="js/function_js.js"></script>--%>
+    <script src="js/j-query.js"></script>
+    <script src="js/jquery-latest.pack.js"></script>
+    <script src="js/jcarousellite_1.0.1c4.js"></script>
+    <script src="js/jquery.vticker.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.news-container').vTicker({
+                speed: 500,
+                pause: 3000,
+                animation: 'fade',
+                mousePause: true,
+                showItems: 3
+            });
+        });
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="frmHome" runat="server">
-            <header id="header"><!--header-->
-		<div class="header_top"><!--header_top-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="contactinfo">
-							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i> +84 123456789</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i>info@domain.com</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="social-icons pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header_top-->
-		
-		<div class="header-middle"><!--header-middle-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="logo pull-left">
-							<a href="Default.aspx"><img src="images/home/sf.png" alt="" /></a>
-						</div>
-						<div class="btn-group pull-right">
-							<div class="btn-group">
-								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									USA
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="#">UK</a></li>
-								</ul>
-							</div>
-							
-							<div class="btn-group">
-								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									DOLLAR
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="#">Pound</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-8">
-						<div class="shop-menu pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href="#"><i class="fa fa-user"></i> Account</a></li>
-								<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-								<li><a href="#"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-								<li><a href="#"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="#"><i class="fa fa-lock"></i> Login</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header-middle-->
-	
-		<div class="header-bottom"><!--header-bottom-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-9">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="mainmenu pull-left">
-							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="Default.aspx" class="active">Home</a></li>
-								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="#">Products</a></li>
-										<li><a href="#">Product Details</a></li> 
-										<li><a href="#">Checkout</a></li> 
-										<li><a href="#">Cart</a></li> 
-										<li><a href="#">Login</a></li> 
-                                    </ul>
-                                </li> 
-								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="#">Blog List</a></li>
-										<li><a href="#">Blog Single</a></li>
-                                    </ul>
-                                </li> 
-								<li><a href="404.html">404</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="search_box pull-right">
-							<input type="text" placeholder="Search"/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header-bottom-->
-	</header><!--/header-->
 
-            <asp:ContentPlaceHolder ID="phHome" runat="server">
-            </asp:ContentPlaceHolder>
-        
-		<footer id="footer"><!--Footer-->
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-						<div class="companyinfo">
-							<h2><span>Clothing</span>-Store</h2>
-							<p>So hot</p>
-						</div>
-					</div>
-					<div class="col-sm-7">
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>20 JULY 2020</h2>
-							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>20 JULY 2020</h2>
-							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>20 JULY 2020</h2>
-							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>20 JULY 2020</h2>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="address">
-							<img src="images/home/map.png" alt="" />
-							<p>Hồ Chí Minh City</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="footer-widget">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Service</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Online Help</a></li>
-								<li><a href="#">Contact Us</a></li>
-								<li><a href="#">Order Status</a></li>
-								<li><a href="#">Change Location</a></li>
-								<li><a href="#">FAQ’s</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Clothing Shop</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Áo thun</a></li>
-								<li><a href="#">Áo jeans</a></li>
-								<li><a href="#">Áo Hoodie</a></li>
-								<li><a href="#">Quần JEANS</a></li>
-								<li><a href="#">Quần tây</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Policies</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Terms of Use</a></li>
-								<li><a href="#">Privecy Policy</a></li>
-								<li><a href="#">Refund Policy</a></li>
-								<li><a href="#">Billing System</a></li>
-								<li><a href="#">Ticket System</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>About Shopper</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Company Information</a></li>
-								<li><a href="#">Careers</a></li>
-								<li><a href="#">Store Location</a></li>
-								<li><a href="#">Affillate Program</a></li>
-								<li><a href="#">Copyright</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-3 col-sm-offset-1">
-						<div class="single-widget">
-							<h2>About Shopper</h2>
-							<form action="#" class="searchform">
-								<input type="text" placeholder="Your email address" />
-								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
-								<p>Get the most recent updates from <br />our site and be updated your self...</p>
-							</form>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-		
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
-				</div>
-			</div>
-		</div>
-		
-	</footer><!--/Footer-->
+    <form id="form1" runat="server">
+
+        <div class=" header-top">
+            <!-- phần sdt và email -->
+            <div class="row header-contact">
+                <div class="col-xs-6 col-sm-6 col-md-3 hotline">
+                    <p>Hotline: 0327 010 289 </p>
+                </div>
+
+                <div class="col-xs-6 col-sm-6 col-md-3 email">
+                    <p>Email: baonguyen741999@gmail.com</p>
+                </div>
+            </div>
+            <!-- phần logo và search -->
+            <!-- logo -->
+            <div class="row row2">
+                <div class=" layout-column col-lg-3 col-md-3 col-sm-12 col-xs-12 left-logo">
+                    <h1><a href="TrangChu.aspx">
+                        <img src="../images/logo-title.png" style="margin-left: 10px;" class="logo img-responsive" alt="" /></a></h1>
+                    <span style="font-size: 17px; color: coral; font-weight: bold">Eric shop</span>
+                </div>
+                <!-- search -->
+                <div class="layout-column col-lg-6 col-md-6 col-sm-9 col-xs-9 mid">
+                    <div class="logo">
+                        <div class="search">
+
+                            <asp:TextBox CssClass="search-input" ID="txtsearchs" type="text" placeholder="Nhập từ khóa tìm kiếm..." runat="server"></asp:TextBox>
+                            <span class="input-group-btn search-btn">
+                                <%--<button class="btn btn-block search-btn">Tìm kiếm</button>--%>
+                                <asp:Button ID="btnsearchs" runat="server" Text="Tìm kiếm" CssClass="btn btn-block search-btn"  />
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- dang ki/ dang nhap -->
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="login-user">
+                        <div class="text-user">
+                            <asp:LinkButton ID="btndangki" CssClass="dk" runat="server">Đăng kí / </asp:LinkButton>
+                            <asp:LinkButton ID="btndangnhap" CssClass="dn" runat="server">Đăng nhập</asp:LinkButton>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-xs-1 col-sm-1 ">
+                     <asp:LinkButton ID="LinkButton1"  CssClass="cart-s" runat="server" ><i class="fa fa-shopping-cart"></i><asp:Label ID="lblslgiohang" CssClass="hang" runat="server" ClientIDMode="Static" Text="0"></asp:Label></asp:LinkButton>
+                </div>
+            </div>
+
+            <!-- menu -->
+            <div class="row row3 ">
+                <!-- <div class="col-md-1 col-xs-1 col-sm-1"></div> -->
+                <nav class="col-xs-12 col-sm-12 col-md-12 header-menu navbar navbar-default navbar-inverse affix-top" role="navigation header-menu" data-spy="affix" data-offset-top="200">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="sr-only">Toggler navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse collapse-li" id="myNavbar">
+                        <ul>
+                            <li><a href="TrangChu.aspx" id="first-home">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="Tintuc.aspx">Tin tức</a></li>
+                            <li><a href="BanDo.aspx">Vị trí</a></li>
+                            <li><a href="Lienhe.aspx">Phản hồi</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+        <div class="clearfix">
+        </div>
+
+        <div class="under_menu">
+            <div class="container-fluid" style="padding: 0">
+                <section class="services">
+                    <div class="container">
+                        <div class="row item-services">
+                            <!-- col services 1 -->
+                            <div class="col-item-services col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                                <div class="service_item_ed">
+                                    <span class="iconx">
+                                        <img src="../images/srv_1.png" alt="Miễn phí vận chuyển">
+                                    </span>
+                                    <div class="content_srv">
+                                        <span class="title-services">Miễn phí giao hàng</span>
+                                        <span class="content-services">Với đơn hàng trên 50k</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- col services 2 -->
+                            <div class="col-item-services col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                                <div class="service_item_ed">
+                                    <span class="iconx">
+                                        <img src="../images/srv_2.png" alt="Miễn phí vận chuyển">
+                                    </span>
+                                    <div class="content_srv">
+                                        <span class="title-services">Chất lượng uy tính</span>
+                                        <span class="content-services">100% là hàng chính hãng</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- col services 3 -->
+                            <div class="col-item-services col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                                <div class="service_item_ed">
+                                    <span class="iconx">
+                                        <img src="../images/srv_3.png" alt="Miễn phí vận chuyển">
+                                    </span>
+                                    <div class="content_srv">
+                                        <span class="title-services">Hỗ trợ 24/7</span>
+                                        <span class="content-services">Thông tin đầy đủ hửu ích</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- col services 4 -->
+                            <div class="col-item-services col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                                <div class="service_item_ed">
+                                    <span class="iconx">
+                                        <img src="../images/srv_4.png" alt="Miễn phí vận chuyển">
+                                    </span>
+                                    <div class="content_srv">
+                                        <span class="title-services">Liên hệ miễn phí</span>
+                                        <span class="content-services">Gọi ngay <a href="tel: (+84).32.788.9063">032 788 9063</a></span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <div class="clearfix">
+        </div>
+        <asp:ContentPlaceHolder ID="Content" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <div id="fb-root"></div>
+        <div id="Div1"></div>
+        <script>(function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1838823719729580";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+        </script>
+        <div class="footer">
+            <div class="footer_content">
+                <div class="container">
+                    <div class="col-md-1 "></div>
+                    <div class="col-md-5 ">
+                        <div class="title_footer">
+                            <h1 style="border-bottom: 1px solid #a7a7a7">TIN TỨC & KHUYẾN MẠI MỚI NHẤT</h1>
+                        </div>
+                        <div class="first-new">
+                            <asp:Repeater ID="rptTinTucMoiNhat" runat="server">
+                                <ItemTemplate>
+
+                                    <a href="ChiTietTinTuc.aspx?Id=<%# Eval("Id")%>">
+                                        <img src="<%# Eval("urlHinhAnh")%>">
+                                    </a>
+                                    &nbsp;&nbsp;
+                                            <div style="margin-top: -12px;">
+                                                <a href="ChiTietTinTuc.aspx?Id=<%# Eval("Id")%>" style="font-weight: bold; font-size: 14px; color: #443d45;"><%# Eval("tieuDe") %>
+                                                </a>
+                                                <p><%# Eval("tomtat").ToString().Length<=200?Eval("tomtat"):Eval("tomtat").ToString().Substring(0,200)+"..." %></p>
+                                            </div>
+
+                                </ItemTemplate>
+                            </asp:Repeater>
+
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="news">
+                            <%--<div style="border-bottom: 1px solid #a7a7a7;">--%>
+                            <div class="news-container" style="height: 100%">
+                                <ul style="height: 100%">
+                                    <asp:Repeater ID="rptTinTuc" runat="server">
+                                        <ItemTemplate>
+                                            <li>
+                                                <div class="thumb" style="padding-top: 10px;">
+                                                    <img src="<%# Eval("urlHinhAnh")%>">
+                                                </div>
+                                                <div class="info" style="padding: 10px 10px;">
+                                                    <a href="ChiTietTinTuc.aspx?Id=<%# Eval("Id")%>" style="color: black; font-size: 15px;"><%# Eval("tieuDe") %></a>
+                                                    <p style="padding-top: 10px;"><%# Eval("tomtat").ToString().Length<=100?Eval("tomtat"):Eval("tomtat").ToString().Substring(0,100)+"..." %> </p>
+                                                </div>
+                                                <div class="clr"></div>
+                                            </li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            <%--footer--%>
+            <footer class="footer">
+                <div class="site-footer">
+                    <!-- footer top -->
+                    <div class="footer-top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-3 col-md-3 reset-padding">
+                                    <div class="footer-title">
+                                        <p>Danh mục sản phẩm</p>
+                                    </div>
+                                    <div class="footer-ten">
+                                        <ul>
+                                            <li class="li-menu"><a href="#">Áo khoác</a></li>
+                                            <li class="li-menu"><a href="#">Áo Sơ mi</a></li>
+                                            <li class="li-menu"><a href="#">Quần Jeans</a></li>
+                                            <li class="li-menu"><a href="#">Quần dài</a></li>
+                                            <li class="li-menu"><a href="#">Quần Shorts</a></li>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-3 reset-padding">
+                                    <div class="footer-title">
+                                        <p>Nhà phân phối</p>
+                                    </div>
+                                    <div class="footer-ten">
+                                        <ul>
+                                            <li class="li-menu"><a href="#">Ahihi</a></li>
+                                            <li class="li-menu"><a href="#">Haha</a></li>
+                                            <li class="li-menu"><a href="#">Hihi</a></li>
+                                            <li class="li-menu"><a href="#">Hehe</a></li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class=" col-xs-12 col-sm-2 col-md-2 reset-padding">
+                                    <div class="footer-title">
+                                        <p>Dịch vụ hổ trợ</p>
+                                    </div>
+                                    <div class="footer-ten">
+                                        <ul>
+                                            <li class="li-menu">Giờ mở cửa</li>
+                                            <li class="li-menu"><span class="text-yelow">8h00 AM - 22h00 PM</span></li>
+                                            <li class="li-menu">Đặt hàng nhanh</li>
+                                            <li class="li-menu"><span class="text-yelow">Gọi ngay: 0327 010 289</span></li>
+                                            <li class="li-menu">
+                                                <span>Số người đang Online:</span>
+                                                <asp:Label ID="lblsonguoiOnline" runat="server" Text=""></asp:Label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4 col-md-4 reset-padding">
+                                    <div class="footer-title">
+                                    </div>
+
+                                </div>h
+
+                            </div>
+                            <div class="footer-borther"></div>
+                        </div>
+                    </div>
+                    <!-- hết footer top -->
+
+                    <!-- footer mid -->
+
+                    <div class="footer-mid">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-5">
+                                    <div class="footer-title">
+                                        <p>Clothing-Store</p>
+                                    </div>
+                                    <div class="footer-ten">
+                                        <ul>
+                                            <li class="li-menu"><i class="fa fa-map-marker"></i>Địa chỉ: Đồng Nai</li>
+                                            <li class="li-menu"><i class="fa fa-phone"></i>Điện thoại: 0327 010 289</li>
+                                            <li class="li-menu"><i class="fa fa-envelope-o"></i>Email: baonguyen741999@gmail.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 pay_footer">
+                                    <div class="footer-title">
+                                        <p>Chấp nhận thanh toán</p>
+                                    </div>
+                                    <div class="footer-pay">
+                                        <ul>
+                                            <li><a href="#">
+                                                <img src="../images/pay_1.png" alt=""></a></li>
+                                            <li><a href="#">
+                                                <img src="../images/pay_2.png" alt=""></a></li>
+                                            <li><a href="#">
+                                                <img src="../images/pay_3.png" alt=""></a></li>
+                                            <li><a href="#">
+                                                <img src="../images/pay_4.png" alt=""></a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 social_footer">
+                                    <div class="footer-title">
+                                        <p>Kết nối với chúng tôi</p>
+
+                                    </div>
+                                    <div class="footer-pay">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa fa-facebook-official social-icon"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter-square social-icon"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-youtube-play social-icon"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus-square social-icon"></i></a></li>
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 footer-bottom-style">
+                                    <span>Cảm ơn mọi người đã quan tâm <b> Many thanks</b></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        </div>
     </form>
-	<script src="/js/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/jquery.scrollUp.min.js"></script>
-	<script src="/js/price-range.js"></script>
-    <script src="/js/jquery.prettyPhoto.js"></script>
-    <script src="/js/main.js"></script>
- 
+
 </body>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5bdc76870c903357628ca2dc/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </html>
