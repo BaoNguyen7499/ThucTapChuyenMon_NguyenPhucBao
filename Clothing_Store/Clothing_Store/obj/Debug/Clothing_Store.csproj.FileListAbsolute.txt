@@ -116,3 +116,9 @@ E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Clothing_Sto
 E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Clothing_Store\obj\Debug\Clothing_Store.csproj.CopyComplete
 E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Clothing_Store\obj\Debug\Clothing_Store.dll
 E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Clothing_Store\obj\Debug\Clothing_Store.pdb
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Clothing_Store\bin\BUS.dll
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Clothing_Store\bin\DAL.dll
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Clothing_Store\bin\Entity.dll
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Clothing_Store\bin\BUS.pdb
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Clothing_Store\bin\DAL.pdb
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Clothing_Store\bin\Entity.pdb

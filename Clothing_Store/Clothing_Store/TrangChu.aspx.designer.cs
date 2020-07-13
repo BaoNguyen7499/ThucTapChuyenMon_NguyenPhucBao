@@ -87,13 +87,13 @@ namespace Clothing_Store
         protected global::System.Web.UI.WebControls.DataList dtldamkhuyenmai;
 
         /// <summary>
-        /// LinkButton2 control.
+        /// lbtnchitietquandai control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
+        protected global::System.Web.UI.WebControls.LinkButton lbtnchitietquandai;
 
         /// <summary>
         /// dtlquandai control.
@@ -105,13 +105,13 @@ namespace Clothing_Store
         protected global::System.Web.UI.WebControls.DataList dtlquandai;
 
         /// <summary>
-        /// LinkButton3 control.
+        /// lbtnchitietquanshorts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
+        protected global::System.Web.UI.WebControls.LinkButton lbtnchitietquanshorts;
 
         /// <summary>
         /// dtlquanshorts control.
@@ -123,13 +123,13 @@ namespace Clothing_Store
         protected global::System.Web.UI.WebControls.DataList dtlquanshorts;
 
         /// <summary>
-        /// LinkButton4 control.
+        /// lbtnchitiettonkho control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
+        protected global::System.Web.UI.WebControls.LinkButton lbtnchitiettonkho;
 
         /// <summary>
         /// dtltonkho control.

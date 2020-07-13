@@ -72,7 +72,7 @@
                             <asp:TextBox CssClass="search-input" ID="txtsearchs" type="text" placeholder="Nhập từ khóa tìm kiếm..." runat="server"></asp:TextBox>
                             <span class="input-group-btn search-btn">
                                 <%--<button class="btn btn-block search-btn">Tìm kiếm</button>--%>
-                                <asp:Button ID="btnsearchs" runat="server" Text="Tìm kiếm" CssClass="btn btn-block search-btn"  />
+                                <asp:Button ID="btnsearchs" runat="server" Text="Tìm kiếm" CssClass="btn btn-block search-btn" OnClick="btnsearchs_Click"  />
                             </span>
 
                         </div>
@@ -83,13 +83,13 @@
                 <div class="col-md-2 col-sm-2 col-xs-2">
                     <div class="login-user">
                         <div class="text-user">
-                            <asp:LinkButton ID="btndangki" CssClass="dk" runat="server">Đăng kí / </asp:LinkButton>
-                            <asp:LinkButton ID="btndangnhap" CssClass="dn" runat="server">Đăng nhập</asp:LinkButton>
+                            <asp:LinkButton ID="btndangki" CssClass="dk" runat="server" OnClick="btndangki_Click">Đăng kí / </asp:LinkButton>
+                            <asp:LinkButton ID="btndangnhap" CssClass="dn" runat="server" OnClick="btndangnhap_Click">Đăng nhập</asp:LinkButton>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-1 col-xs-1 col-sm-1 ">
-                     <asp:LinkButton ID="LinkButton1"  CssClass="cart-s" runat="server" ><i class="fa fa-shopping-cart"></i><asp:Label ID="lblslgiohang" CssClass="hang" runat="server" ClientIDMode="Static" Text="0"></asp:Label></asp:LinkButton>
+                     <asp:LinkButton ID="LinkButton1"  CssClass="cart-s" runat="server" OnClick="LinkButton1_Click" ><i class="fa fa-shopping-cart"></i><asp:Label ID="lblslgiohang" CssClass="hang" runat="server" ClientIDMode="Static" Text="0"></asp:Label></asp:LinkButton>
                 </div>
             </div>
 

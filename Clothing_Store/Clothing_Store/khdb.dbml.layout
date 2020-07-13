@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 16.5, 15.375" name="khdb">
+  <DataContextMoniker Name="/khdbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="dcdf3a3f-4a27-4cc7-97c1-d7068200a3f7" absoluteBounds="0.75, 6.875, 2, 1.5785953776041675">
+      <DataClassMoniker Name="/khdbDataContext/tblQuangCao" />
+      <nestedChildShapes>
+        <elementListCompartment Id="774bb858-2387-44ca-824b-8ca88b75828d" absoluteBounds="0.765, 7.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="190d10ac-8b8b-485b-abbd-84b9d36c883e" absoluteBounds="6.25, 5.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/khdbDataContext/tbl_TinTuc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f81c194-7b16-4865-a1c0-2b7e03461e78" absoluteBounds="6.265, 6.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2445b11f-0f6f-46bb-8671-fa13880ddc5e" absoluteBounds="0.75, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/khdbDataContext/tbl_Quyen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88ab98e2-bb76-4ea9-8016-6e30a93cdd48" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54a17c57-29de-4e48-bd7c-a79871ae23a0" absoluteBounds="0.75, 9.875, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/khdbDataContext/tbl_QuanLyMeNu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be04e9f0-cf8c-4c78-906d-f22eaec4fbe8" absoluteBounds="0.765, 10.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f60e1f6a-1a49-4b9f-8033-00525ab2b483" absoluteBounds="6.25, 2.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/khdbDataContext/tbl_PhieuNhap" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74b1070d-0a34-4dca-95bc-a78d0cd9da71" absoluteBounds="6.265, 3.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="74dfcbf6-8158-46b2-af8b-4bb82d03f573" absoluteBounds="3.75, 9.875, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/khdbDataContext/tbl_NhomHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0375e3f-0c56-4414-a789-00b0592c04b5" absoluteBounds="3.765, 10.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="000155c2-2baf-4262-9e7b-0f25fca16ef8" absoluteBounds="3.5, 3.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/khdbDataContext/tbl_NhanVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a3b7891-8450-4383-a07c-cd9a5ecfe5f0" absoluteBounds="3.515, 3.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5abdbe5-39e3-487e-ae73-4c185df54388" absoluteBounds="6.75, 9.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/khdbDataContext/tbl_LienLac" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4efc6bb1-c8e8-467d-9c10-d793179394b5" absoluteBounds="6.765, 10.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="93c57542-bf8c-4717-b0ea-596e4ad0f576" absoluteBounds="3.5, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/khdbDataContext/tbl_NhaCungCap" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6d7b91b-5c09-471d-aed9-b6345c0cd361" absoluteBounds="3.515, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="642b1ec8-a906-4a32-bb22-8bb36e69683a" absoluteBounds="8.75, 4.875, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/khdbDataContext/tbl_KhuyenMai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b599830d-d032-4efe-af9a-9962f114b230" absoluteBounds="8.765, 5.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b74e428b-0ff8-4ae3-af3c-c03fca3eee24" absoluteBounds="9.75, 11.875, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/khdbDataContext/tbl_KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5ad80604-5024-4c50-9eec-7b964b368677" absoluteBounds="9.765, 12.335, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c948a168-aec1-4af8-a819-81a6c31a033c" absoluteBounds="11.5, 7.25, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/khdbDataContext/tbl_Hang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a7096bc7-7353-4fc2-bc52-a34242b4aab0" absoluteBounds="11.515, 7.71, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7dc0510b-6529-48a2-993d-3ffa94fa6a0d" absoluteBounds="11.5, 2.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/khdbDataContext/tbl_DatHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8fae8e43-13d9-42f1-8625-d638b3fb4a54" absoluteBounds="11.515, 2.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="433355c5-5c12-46eb-962b-4d8892a07a8c" absoluteBounds="11.75, 4.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/khdbDataContext/tbl_admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="606bfb90-6bfc-4549-b98b-34cb50e87df8" absoluteBounds="11.765, 5.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="48c5ae91-dcc9-4a5b-b1a8-6672cec859df" absoluteBounds="14.25, 2, 2, 1.9631982421875">
+      <DataClassMoniker Name="/khdbDataContext/tbl_ChiTietDatHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="63ca448e-4fa7-455b-9ff0-f70d64512f0a" absoluteBounds="14.265, 2.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a35d7fd-2d6b-4bfe-9ef7-599f1f19f750" absoluteBounds="8.75, 2.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/khdbDataContext/PayMeThod" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae541f9c-8fa0-4fa3-8ff4-0c34b581fefe" absoluteBounds="8.765, 2.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4bc12992-38c5-4739-afb5-b5dc0197424e" absoluteBounds="3.75, 12.875, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/khdbDataContext/devvn_tinhthanhpho" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e05a9360-743f-451e-8d0d-97cdf87c8111" absoluteBounds="3.765, 13.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="934ddb25-996b-4c71-b07d-c9a6774ad9da" absoluteBounds="12.75, 11.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/khdbDataContext/devvn_quanhuyen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="45cba0f9-ccd7-436f-aad3-38d4bce07a16" absoluteBounds="12.765, 12.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.5 : 5.84780110677083); (4.5 : 7.06895232291667); (6.25 : 7.06895232291667)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/khdbDataContext/tbl_NhanVien/tbl_NhanVien_tbl_TinTuc" />
+      <nodes>
+        <classShapeMoniker Id="000155c2-2baf-4262-9e7b-0f25fca16ef8" />
+        <classShapeMoniker Id="190d10ac-8b8b-485b-abbd-84b9d36c883e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 3.97679768880208); (6.25 : 3.97679768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/khdbDataContext/tbl_NhanVien/tbl_NhanVien_tbl_PhieuNhap" />
+      <nodes>
+        <classShapeMoniker Id="000155c2-2baf-4262-9e7b-0f25fca16ef8" />
+        <classShapeMoniker Id="f60e1f6a-1a49-4b9f-8033-00525ab2b483" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.63544840494792); (3.5 : 4.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/khdbDataContext/tbl_Quyen/tbl_Quyen_tbl_NhanVien" />
+      <nodes>
+        <classShapeMoniker Id="2445b11f-0f6f-46bb-8671-fa13880ddc5e" />
+        <classShapeMoniker Id="000155c2-2baf-4262-9e7b-0f25fca16ef8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.63544840494792); (7.25 : 1.63544840494792); (7.25 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/khdbDataContext/tbl_NhaCungCap/tbl_NhaCungCap_tbl_PhieuNhap" />
+      <nodes>
+        <classShapeMoniker Id="93c57542-bf8c-4717-b0ea-596e4ad0f576" />
+        <classShapeMoniker Id="f60e1f6a-1a49-4b9f-8033-00525ab2b483" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.5 : 9.00080485026042); (15.25 : 9.00080485026042); (15.25 : 3.9631982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/khdbDataContext/tbl_Hang/tbl_Hang_tbl_ChiTietDatHang" />
+      <nodes>
+        <classShapeMoniker Id="c948a168-aec1-4af8-a819-81a6c31a033c" />
+        <classShapeMoniker Id="48c5ae91-dcc9-4a5b-b1a8-6672cec859df" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.5 : 3.03929768880208); (14.25 : 3.03929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/khdbDataContext/tbl_DatHang/tbl_DatHang_tbl_ChiTietDatHang" />
+      <nodes>
+        <classShapeMoniker Id="7dc0510b-6529-48a2-993d-3ffa94fa6a0d" />
+        <classShapeMoniker Id="48c5ae91-dcc9-4a5b-b1a8-6672cec859df" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 3.06814697265625); (11.5 : 3.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/khdbDataContext/PayMeThod/PayMeThod_tbl_DatHang" />
+      <nodes>
+        <classShapeMoniker Id="1a35d7fd-2d6b-4bfe-9ef7-599f1f19f750" />
+        <classShapeMoniker Id="7dc0510b-6529-48a2-993d-3ffa94fa6a0d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

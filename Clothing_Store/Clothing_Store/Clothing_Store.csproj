@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -68,6 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="backtopWeb.aspx" />
+    <Content Include="BanDo.aspx" />
+    <Content Include="ChiTietSanPham.aspx" />
+    <Content Include="ChiTietTinTuc.aspx" />
     <Content Include="ckeditor\adapters\jquery.js" />
     <Content Include="ckeditor\build-config.js" />
     <Content Include="ckeditor\ckeditor.js" />
@@ -467,8 +471,12 @@
     <Content Include="css\style.css" />
     <Content Include="css\style2.css" />
     <Content Include="css\trangchucss.css" />
+    <Content Include="DangKiThanhVien.aspx" />
+    <Content Include="DangNhap.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GioHang.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="images\.png" />
     <Content Include="images\1-140x190.JPG" />
     <Content Include="images\1.jpg" />
@@ -592,7 +600,13 @@
     <Content Include="js\jquery.vticker.js" />
     <Content Include="js\script.js" />
     <Content Include="js\slick.min.js" />
+    <Content Include="LienHe.aspx" />
     <Content Include="MenuLeft.aspx" />
+    <Content Include="SanPham.aspx" />
+    <Content Include="ThanhToan.aspx" />
+    <Content Include="Thongtincanhan.aspx" />
+    <Content Include="TimKiem.aspx" />
+    <Content Include="Tintuc.aspx" />
     <Content Include="TrangChu.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -604,12 +618,69 @@
     <Compile Include="backtopWeb.aspx.designer.cs">
       <DependentUpon>backtopWeb.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BanDo.aspx.cs">
+      <DependentUpon>BanDo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanDo.aspx.designer.cs">
+      <DependentUpon>BanDo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietSanPham.aspx.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTietSanPham.aspx.designer.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietTinTuc.aspx.cs">
+      <DependentUpon>ChiTietTinTuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTietTinTuc.aspx.designer.cs">
+      <DependentUpon>ChiTietTinTuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DangKiThanhVien.aspx.cs">
+      <DependentUpon>DangKiThanhVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangKiThanhVien.aspx.designer.cs">
+      <DependentUpon>DangKiThanhVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.aspx.cs">
+      <DependentUpon>DangNhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangNhap.aspx.designer.cs">
+      <DependentUpon>DangNhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GioHang.aspx.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GioHang.aspx.designer.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Home.Master.cs">
       <DependentUpon>Home.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Home.Master.designer.cs">
       <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="khdb.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>khdb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LienHe.aspx.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LienHe.aspx.designer.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
     </Compile>
     <Compile Include="MenuLeft.aspx.cs">
       <DependentUpon>MenuLeft.aspx</DependentUpon>
@@ -619,6 +690,41 @@
       <DependentUpon>MenuLeft.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SanPham.aspx.cs">
+      <DependentUpon>SanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SanPham.aspx.designer.cs">
+      <DependentUpon>SanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhToan.aspx.cs">
+      <DependentUpon>ThanhToan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThanhToan.aspx.designer.cs">
+      <DependentUpon>ThanhToan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Thongtincanhan.aspx.cs">
+      <DependentUpon>Thongtincanhan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Thongtincanhan.aspx.designer.cs">
+      <DependentUpon>Thongtincanhan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiem.aspx.cs">
+      <DependentUpon>TimKiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimKiem.aspx.designer.cs">
+      <DependentUpon>TimKiem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tintuc.aspx.cs">
+      <DependentUpon>Tintuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tintuc.aspx.designer.cs">
+      <DependentUpon>Tintuc.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TrangChu.aspx.cs">
       <DependentUpon>TrangChu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -652,6 +758,14 @@
     <Content Include="ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
     <Content Include="ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
     <Content Include="ckeditor\skins\moono-lisa\readme.md" />
+    <Content Include="khdb.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>khdb.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="khdb.dbml.layout">
+      <DependentUpon>khdb.dbml</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -659,6 +773,26 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{a25ba8ae-35bd-4cf0-aa5b-258b97dfdb6e}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{0980bd83-0027-420c-a4aa-08a2f84b86ea}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{1efb8449-5bf9-48af-96e0-dee6cea000fc}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

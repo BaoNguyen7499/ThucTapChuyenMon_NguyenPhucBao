@@ -1,0 +1,6 @@
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Entity\bin\Debug\Entity.dll
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Entity\bin\Debug\Entity.pdb
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Entity\obj\Debug\Entity.csprojAssemblyReference.cache
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Entity\obj\Debug\Entity.dll
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\Entity\obj\Debug\Entity.pdb

@@ -1,0 +1,11 @@
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\BUS\bin\Debug\BUS.dll
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\BUS\bin\Debug\BUS.pdb
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\BUS\bin\Debug\DAL.dll
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\BUS\bin\Debug\Entity.dll
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\BUS\bin\Debug\DAL.pdb
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\BUS\bin\Debug\Entity.pdb
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\BUS\obj\Debug\BUS.csproj.CopyComplete
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\BUS\obj\Debug\BUS.dll
+E:\NguyenPhucBao_TTCM\ThucTapChuyenMon_NguyenPhucBao\Clothing_Store\BUS\obj\Debug\BUS.pdb

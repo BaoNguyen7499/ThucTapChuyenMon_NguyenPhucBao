@@ -13,27 +13,27 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
 
     <div class="content">
-        <div class="left">
-    <div class="tieudetrai">
-        DANH MỤC SẢN PHẨM
-    </div>
-    <div class="danhmuc">
-        <ul class="side-menu" data-side-menu="data-side-menu">
-            <asp:Repeater ID="remenu" runat="server">
-                <ItemTemplate>
-                     <li>
-                         <asp:LinkButton ID="lbndamlien" runat="server" Text='<%# Bind("TenNhomHang")%>' CommandArgument='<%# Eval("id") %>'></asp:LinkButton>
-                    </li>
-                </ItemTemplate>
-            </asp:Repeater>
-        </ul>
-
-    </div>
-</div>
+       <div class="backtop"> <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a> </div>
         <div class="wap_slider">
             <div class="container">
                 <div class="col-md-3 col-xs-3 col-sm-3">
-                   <div class="backtop"> <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a> </div>
+                   <div class="left">
+                      <div class="tieudetrai">
+                          DANH MỤC SẢN PHẨM
+                       </div>
+                          <div class="danhmuc">
+                           <ul class="side-menu" data-side-menu="data-side-menu">
+                               <asp:Repeater ID="remenu" runat="server">
+                                  <ItemTemplate>
+                                       <li>
+                                   <asp:LinkButton ID="lbndamlien" runat="server" Text='<%# Bind("TenNhomHang")%>' CommandArgument='<%# Eval("id") %>'></asp:LinkButton>
+                            </li>
+                          </ItemTemplate>
+                      </asp:Repeater>
+                      </ul>
+
+                  </div>
+                </div>
                 </div>
                 <div class="col-sm-9 col-xs-9 col-md-9">
 
@@ -42,7 +42,7 @@
                             <asp:Repeater ID="rptQuangCao" runat="server" OnItemCommand="rptQuangCao_ItemCommand">
                                 <ItemTemplate>
                                     <div>
-                                        <asp:ImageButton ID="ImageButton2" Width="100%" Height="315px" runat="server" ImageUrl='<%# Bind("urlImage")%>' CommandArgument='<%# Bind("id")%>'></asp:ImageButton>
+                                        <asp:ImageButton ID="ImageButton2" Width="100%" Height="315px" runat="server" ImageUrl='<%# Bind("urlImage")%>' OnClick="ImageButton2_Click" CommandArgument='<%# Bind("id")%>'></asp:ImageButton>
                                     </div>
                                 </ItemTemplate>
                             </asp:Repeater>
@@ -58,7 +58,7 @@
                 <div class="container">
                     <h2 class="tieudegiua">
                         <span class="title-content">ÁO Sơ mi nam</span>
-                        <asp:LinkButton ID="lbtnMuatiep" runat="server" class="style_link" >(Xem thêm...)</asp:LinkButton>
+                        <asp:LinkButton ID="lbtnMuatiep" runat="server" class="style_link" OnClick="lbtnMuatiep_Click">(Xem thêm...)</asp:LinkButton>
                     </h2>
                     <div class="clearfix"></div>
                 </div>
@@ -81,7 +81,7 @@
                                                 <strong><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaMoi").ToString()))  %></strong>
                                             </div>
                                             <div style="text-decoration: line-through; margin-top: 10px"><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaCu").ToString()))  %></div>
-                                            <asp:LinkButton ID="LinkButton1" class="discount" CommandName="myCommand" runat="server" CommandArgument='<%# Eval("id") %>' >Xem chi tiết</asp:LinkButton>
+                                            <asp:LinkButton ID="LinkButton1" class="discount" CommandName="myCommand" runat="server" CommandArgument='<%# Eval("id") %>' OnClick="LinkButton1_Click">Xem chi tiết</asp:LinkButton>
                                         </p>
                                     </div>
                                 </div>
@@ -93,14 +93,14 @@
             <div class="container">
                 <h2 class="tieudegiua" style="margin-top: 30px">
                     <span class="title-content" style="margin-top:10px">Áo khoác</span>
-                    <asp:LinkButton ID="lbtnchitietvdsb" runat="server" class="style_link">(Xem thêm...)</asp:LinkButton>
+                    <asp:LinkButton ID="lbtnchitietvdsb" runat="server" class="style_link" OnClick="lbtnchitietvdsb_Click">(Xem thêm...)</asp:LinkButton>
                 </h2>
 
                 <div class="clearfix"></div>
             </div>
             <div class="container">
                 <div style="margin-left: 60px;">
-                    <asp:DataList ID="dtlvaydamvasetbo" runat="server" RepeatColumns="3" OnItemCommand="dtlvaydamvasetbo_ItemCommand" OnSelectedIndexChanged="dtlvaydamvasetbo_SelectedIndexChanged">
+                    <asp:DataList ID="dtlvaydamvasetbo" runat="server" RepeatColumns="3" OnItemCommand="dtlvaydamvasetbo_ItemCommand" >
                         <ItemTemplate>
                             <div style="width: 100%;">
                                 <div class="item" style="margin: 10px;">
@@ -119,7 +119,7 @@
                                     <p>
                                         <div><strong><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaMoi").ToString()))  %></strong></div>
                                         <div style="text-decoration: line-through; margin-top: 10px"><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaCu").ToString()))  %></div>
-                                        <asp:LinkButton ID="LinkButton1" class="discount" CommandName="myCommand" runat="server" CommandArgument='<%# Eval("id") %>' >Xem chi tiết</asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton1" class="discount" CommandName="myCommand" runat="server" CommandArgument='<%# Eval("id") %>' OnClick="LinkButton1_Click">Xem chi tiết</asp:LinkButton>
                                     </p>
                                 </div>
                             </div>
@@ -133,14 +133,14 @@
             <div class="container">
                 <h2 class="tieudegiua" style="margin-top: 30px">
                     <span class="title-content">Quần Jeans</span>
-                    <asp:LinkButton ID="lbtndamkm" runat="server" class="style_link" >(Xem thêm...)</asp:LinkButton>
+                    <asp:LinkButton ID="lbtndamkm" runat="server" class="style_link" OnClick="lbtndamkm_Click">(Xem thêm...)</asp:LinkButton>
                 </h2>
 
             </div>
             <div class="clearfix"></div>
             <div class="container">
                 <div style="margin-left: 60px;">
-                    <asp:DataList ID="dtldamkhuyenmai" runat="server" RepeatColumns="3" OnItemCommand="dtldamkhuyenmai_ItemCommand">
+                    <asp:DataList ID="dtldamkhuyenmai" runat="server" RepeatColumns="3" OnItemCommand="dtlaokhoac_ItemCommand">
                         <ItemTemplate>
                             <div style="width: 100%;">
                                 <div class="item" style="margin: 10px;">
@@ -155,7 +155,7 @@
                                     <p>
                                         <div><strong><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaMoi").ToString()))  %></strong></div>
                                         <div style="text-decoration: line-through; margin-top: 10px"><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaCu").ToString()))  %></div>
-                                        <asp:LinkButton ID="LinkButton1" class="discount" CommandName="myCommand" runat="server" CommandArgument='<%# Eval("id") %>'>Xem chi tiết</asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton1" class="discount" CommandName="myCommand" runat="server" CommandArgument='<%# Eval("id") %>' OnClick="LinkButton1_Click">Xem chi tiết</asp:LinkButton>
                                     </p>
                                 </div>
                             </div>
@@ -169,7 +169,7 @@
             <div class="container">
                 <h2 class="tieudegiua" style="margin-top: 30px">
                     <span class="title-content">Quần dài</span>
-                    <asp:LinkButton ID="LinkButton2" runat="server" class="style_link">(Xem thêm...)</asp:LinkButton>
+                    <asp:LinkButton ID="lbtnchitietquandai" runat="server" class="style_link" OnClick="lbtnchitietquandai_Click">(Xem thêm...)</asp:LinkButton>
                 </h2>
 
                 <div class="clearfix"></div>
@@ -195,7 +195,7 @@
                                     <p>
                                         <div><strong><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaMoi").ToString()))  %></strong></div>
                                         <div style="text-decoration: line-through; margin-top: 10px"><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaCu").ToString()))  %></div>
-                                        <asp:LinkButton ID="LinkButton1" class="discount" CommandName="myCommand" runat="server" CommandArgument='<%# Eval("id") %>'>Xem chi tiết</asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton1" class="discount" CommandName="myCommand" runat="server" CommandArgument='<%# Eval("id") %>' OnClick="LinkButton1_Click">Xem chi tiết</asp:LinkButton>
                                     </p>
                                 </div>
                             </div>
@@ -210,14 +210,14 @@
                <div class="container">
                 <h2 class="tieudegiua" style="margin-top: 30px">
                     <span class="title-content">Quần shorts</span>
-                    <asp:LinkButton ID="LinkButton3" runat="server" class="style_link" >(Xem thêm)</asp:LinkButton>
+                    <asp:LinkButton ID="lbtnchitietquanshorts" runat="server" class="style_link" OnClick="lbtnchitietquanshorts_Click">(Xem thêm)</asp:LinkButton>
                 </h2>
 
                 <div class="clearfix"></div>
             </div>
             <div class="container">
                 <div style="margin-left: 60px;">
-                    <asp:DataList ID="dtlquanshorts" runat="server" RepeatColumns="3" OnItemCommand="dtlvaydamvasetbo_ItemCommand">
+                    <asp:DataList ID="dtlquanshorts" runat="server" RepeatColumns="3" OnItemCommand="dtlquanshorts_ItemCommand">
                         <ItemTemplate>
                             <div style="width: 100%;">
                                 <div class="item" style="margin: 10px;">
@@ -235,7 +235,7 @@
                                     <p>
                                         <div><strong><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaMoi").ToString()))  %></strong></div>
                                         <div style="text-decoration: line-through; margin-top: 10px"><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaCu").ToString()))  %></div>
-                                        <asp:LinkButton ID="LinkButton1" class="discount" CommandName="myCommand" runat="server" CommandArgument='<%# Eval("id") %>' >Xem chi tiết</asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton1" class="discount" CommandName="myCommand" runat="server" CommandArgument='<%# Eval("id") %>' OnClick="LinkButton1_Click">Xem chi tiết</asp:LinkButton>
                                     </p>
                                 </div>
                             </div>
@@ -250,7 +250,7 @@
              <div class="container">
                 <h2 class="tieudegiua" style="margin-top: 30px">
                     <span class="title-content">Hàng tồn kho</span>
-                    <asp:LinkButton ID="LinkButton4" runat="server" class="style_link" O>(Xem thêm...)</asp:LinkButton>
+                    <asp:LinkButton ID="lbtnchitiettonkho" runat="server" class="style_link" OnClick="lbtnchitiettonkho_Click">(Xem thêm...)</asp:LinkButton>
                 </h2>
 
                 <div class="clearfix"></div>
@@ -275,7 +275,7 @@
                                     <p>
                                         <div><strong><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaMoi").ToString()))  %></strong></div>
                                         <div style="text-decoration: line-through; margin-top: 10px"><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaCu").ToString()))  %></div>
-                                        <asp:LinkButton ID="LinkButton1" class="discount" CommandName="myCommand" runat="server" CommandArgument='<%# Eval("id") %>'>Xem chi tiết</asp:LinkButton>
+                                        <asp:LinkButton ID="LinkButton1" class="discount" CommandName="myCommand" runat="server" CommandArgument='<%# Eval("id") %>' OnClick="LinkButton1_Click">Xem chi tiết</asp:LinkButton>
                                     </p>
                                 </div>
                             </div>
@@ -294,4 +294,3 @@
     </div>
     <div class="clearfix"></div>
 </asp:Content>
-
