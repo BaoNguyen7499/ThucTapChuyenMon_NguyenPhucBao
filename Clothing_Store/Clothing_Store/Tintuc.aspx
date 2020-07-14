@@ -1,53 +1,82 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="Tintuc.aspx.cs" Inherits="Clothing_Store.Tintuc" %>
 
-<%@ Register Src="~/MenuLeft.aspx" TagPrefix="uc1" TagName="MenuLeft"%>
-<%@ Register Src="~/backtopWeb.aspx" TagPrefix="uc1" TagName="backtopWeb"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="content">
-        <uc1:backtopWeb runat="server" ID="backtopWeb" />
+        <div class="backtop"> <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a> </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <uc1:MenuLeft runat="server" ID="MenuLeft" />
+                    <div class="left">
+    <div class="tieudetrai">
+        DANH MỤC SẢN PHẨM
+    </div>
+    <div class="danhmuc">
+        <ul class="side-menu" data-side-menu="data-side-menu">
+            <asp:Repeater ID="remenu" runat="server">
+                <ItemTemplate>
+                     <li>
+                         <asp:LinkButton ID="lbndamlien" runat="server" Text='<%# Bind("TenNhomHang")%>' CommandArgument='<%# Eval("id") %>'></asp:LinkButton>
+                    </li>
+                </ItemTemplate>
+            </asp:Repeater>
+        </ul>
+
+    </div>
+</div>
                 </div>
                 <div class="col-md-9">
-                    <div style="margin-top: 30px;">
-                        <h2 class="tieudegiua">
-                            <span class="title-content">KẾT QUẢ TÌM KIẾM</span>
-                        </h2>
-                    </div>
-                    <div style="margin:40px 70px;">
-                        <asp:DataList ID="dtltimkiem" runat="server" RepeatColumns="2" OnItemCommand="dtltimkiem_ItemCommand">
+                    <div style="width: 100%;">
+                        <div style="margin-top: 30px;">
+                            <h2 class="tieudegiua">
+                                <span class="title-content">TIN TỨC</span>
+                            </h2>
+                        </div>
+                        <ul>
+                        <asp:Repeater ID="rptcontent" runat="server">
                             <ItemTemplate>
-                                <div style="width: 100%; ">
-                                    <div class="item" style="margin: 10px;">
-                                        <a href="#">
-                                            <asp:ImageButton ID="ImageButton1" Style="width: 100%;height:100%" ImageUrl='<%# Bind("image")%>' runat="server" CommandName="myCommand" />
-                                            
-                                        </a>
-                                       
-                                <h3 class="item_text">
-                                    <asp:HyperLink ID="hpltensp" runat="server" Text='<%# Eval("TenHang").ToString().Length<=26?Eval("TenHang"):Eval("TenHang").ToString().Substring(0,26)+"..." %>' Style="display: block; width: 100%; text-align: center;">
-                                    </asp:HyperLink>
+                                <li>
+                                <div class="box-new" style="margin-top: 40px; height: 140px;">
+                                    
+                                    <div class="col-md-3 rounded img" style="margin-right:10px;">
+                                        <a href="ChiTietTinTuc.aspx?Id=<%# Eval("Id")%>">
 
-                                </h3>
-                                        <p>
-                                            <div><strong><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaMoi").ToString()))  %></strong></div>
-                                            <div style="text-decoration:line-through; margin-top:10px"><%# String.Format("{0:0,00}", int.Parse(DataBinder.Eval(Container.DataItem, "giaCu").ToString()))  %></div>
-                                           <asp:LinkButton ID="LinkButton1" class="discount" CommandName="myCommand" runat="server" CommandArgument='<%# Eval("id") %>' OnClick="LinkButton1_Click">Xem chi tiết</asp:LinkButton>
+                                            <img src="<%# Eval("urlHinhAnh")%>" style="height: 150px; width: 150px; object-fit:cover"  />
+                                        </a>
+
+                                    </div>
+                                    <div class="col-md-8" style="margin-left:20px">
+                                        <a href="ChiTietTinTuc.aspx?Id=<%# Eval("Id")%>">
+                                            <h3 style="font-weight: bold;"><%# Eval("tieuDe") %></h3>
+
+                                        </a>
+                                        <p style="text-align: justify; padding-top: 27px; font-size: 13px; line-height: initial;">
+                                            <%# Eval("tomtat") %>
                                         </p>
                                     </div>
                                 </div>
+                                    </li>
                             </ItemTemplate>
-                        </asp:DataList>
-                         
-
+                        </asp:Repeater>
+                            </ul>
+                        <div style="display: block;text-align: center;margin-top:20px;">
+                            <asp:Repeater ID="repeaterPaging" runat="server"
+                                OnItemCommand="repeaterPaging_ItemCommand">
+                                <ItemTemplate>
+                                    <asp:LinkButton ID="btnPage" 
+                                        CommandName="Page" CommandArgument="<%# Container.DataItem %>" style="height:10px;width:10px;    border: 1px solid rgb(213, 213, 213);    color: #000; padding: 5px 5px;"
+                                        runat="server"  Font-Bold="True"> <%# Container.DataItem %>
+                                    </asp:LinkButton>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
                     </div>
+
                 </div>
             </div>
+
         </div>
     </div>
 </asp:Content>

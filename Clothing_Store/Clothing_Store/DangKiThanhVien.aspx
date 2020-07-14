@@ -1,8 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="DangKiThanhVien.aspx.cs" Inherits="Clothing_Store.DangKiThanhVien" %>
 
-<%@ Register Src="~/MenuLeft.aspx" TagPrefix="uc1" TagName="MenuLeft"%>
-<%@ Register Src="~/backtopWeb.aspx" TagPrefix="uc1" TagName="backtopWeb"%>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
@@ -29,10 +26,26 @@
 
    
     <div class="content" style="min-height: 500px;">
-        <uc1:backtopWeb runat="server" ID="backtopWeb" />
+        <div class="backtop"> <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a> </div>
         <div class="container">
             <div class="col-md-3">
-                <uc1:MenuLeft runat="server" ID="MenuLeft" />
+                <div class="left">
+    <div class="tieudetrai">
+        DANH MỤC SẢN PHẨM
+    </div>
+    <div class="danhmuc">
+        <ul class="side-menu" data-side-menu="data-side-menu">
+            <asp:Repeater ID="remenu" runat="server">
+                <ItemTemplate>
+                     <li>
+                         <asp:LinkButton ID="lbndamlien" runat="server" Text='<%# Bind("TenNhomHang")%>' CommandArgument='<%# Eval("id") %>'></asp:LinkButton>
+                    </li>
+                </ItemTemplate>
+            </asp:Repeater>
+        </ul>
+
+    </div>
+</div>
             </div>
 
             <div class="col-md-9">
@@ -57,7 +70,7 @@
                                         <asp:TextBox ID="txtusername" type="text" class="textbox" runat="server" OnTextChanged="txtusername_TextChanged" OnLoad="txtusername_Load"></asp:TextBox>
                                         <span class="userloading">
                                             <%--<img src="images/ajax-loader.gif" style="width:15px;"/>--%>
-                                            <asp:Image ID="loader" runat="server" src="images/ajax-loader.gif" Style="width: 15px;" OnDataBinding="loader_DataBinding" OnDisposed="loader_Disposed" OnInit="loader_Init" OnLoad="loader_Load" OnPreRender="loader_PreRender" OnUnload="loader_Unload" />
+                                            <asp:Image ID="loader" runat="server" src="images/ajax-loader.gif" Style="width: 15px;" OnDataBinding="loader_DataBinding" OnDisposed="loader_Disposed"  OnInit="loader_Init"  OnLoad="loader_Load" OnPreRender="loader_PreRender" OnUnload="loader_Unload" />
                                         </span>
                                         <span class="usernameResult">
                                             <%--<span style="color:#f00;">Tài khoản phải từ 4 kí tự trở lên</span>--%>

@@ -1,8 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="SanPham.aspx.cs" Inherits="Clothing_Store.SanPham" %>
 
-<%@ Register Src="~/MenuLeft.aspx" TagPrefix="uc1" TagName="MenuLeft"%>
-<%@ Register Src="~/backtopWeb.aspx" TagPrefix="uc1" TagName="backtopWeb"%>
-
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -10,17 +7,34 @@
     <%--  <script src="js/j-query.js"></script>--%>
     <div class="content">
 
-        <uc1:backtopWeb runat="server" ID="backtopWeb" />
+       <div class="backtop"> <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a> </div>
+
         <div class="container">
             <div class="col-md-3">
-                <uc1:MenuLeft runat="server" ID="MenuLeft" />
+                <div class="left">
+    <div class="tieudetrai">
+        DANH MỤC SẢN PHẨM
+    </div>
+    <div class="danhmuc">
+        <ul class="side-menu" data-side-menu="data-side-menu">
+            <asp:Repeater ID="remenu" runat="server">
+                <ItemTemplate>
+                     <li>
+                         <asp:LinkButton ID="lbndamlien" runat="server" Text='<%# Bind("TenNhomHang")%>' CommandArgument='<%# Eval("id") %>'></asp:LinkButton>
+                    </li>
+                </ItemTemplate>
+            </asp:Repeater>
+        </ul>
+
+    </div>
+</div>
             </div>
             <div class="col-md-9">
                 <h2 class="tieudegiua" style="margin-top: 40px;">
                     <asp:Label ID="lblsanpham" runat="server" Text="SẢN PHẨM" class="title-content"></asp:Label>
                 </h2>
                 <div style="margin:10px 70px;">
-                    <asp:DataList ID="dtlsanpham" runat="server" RepeatColumns="2" OnItemCommand="dtlaokhoac_ItemCommand">
+                    <asp:DataList ID="dtlsanpham" runat="server" RepeatColumns="2" OnItemCommand="dtlsanpham_ItemCommand">
                         <ItemTemplate>
                             <div style="width: 100%;">
                                 <div class="item" style="margin: 10px;">

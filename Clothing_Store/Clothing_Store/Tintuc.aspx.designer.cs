@@ -15,30 +15,30 @@ namespace Clothing_Store
     {
 
         /// <summary>
-        /// backtopWeb control.
+        /// remenu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Clothing_Store.backtopWeb backtopWeb;
+        protected global::System.Web.UI.WebControls.Repeater remenu;
 
         /// <summary>
-        /// MenuLeft control.
+        /// rptcontent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Clothing_Store.MenuLeft MenuLeft;
+        protected global::System.Web.UI.WebControls.Repeater rptcontent;
 
         /// <summary>
-        /// dtltimkiem control.
+        /// repeaterPaging control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList dtltimkiem;
+        protected global::System.Web.UI.WebControls.Repeater repeaterPaging;
     }
 }

@@ -1,17 +1,31 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="GioHang.aspx.cs" Inherits="Clothing_Store.GioHang" %>
 
-<%@ Register Src="~/MenuLeft.aspx" TagPrefix="uc1" TagName="MenuLeft"%>
-<%@ Register Src="~/backtopWeb.aspx" TagPrefix="uc1" TagName="backtopWeb"%>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <script src="js/j-query.js"></script>
     <div class="content" style="min-height: 400px;">
-        <uc1:backtopWeb runat="server" ID="backtopWeb" />
+        <div class="backtop"> <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a> </div>
+
         <div class="container">
             <div class="col-md-3">
-                <uc1:MenuLeft runat="server" ID="MenuLeft" />
+               <div class="left">
+    <div class="tieudetrai">
+        DANH MỤC SẢN PHẨM
+    </div>
+    <div class="danhmuc">
+        <ul class="side-menu" data-side-menu="data-side-menu">
+            <asp:Repeater ID="remenu" runat="server">
+                <ItemTemplate>
+                     <li>
+                         <asp:LinkButton ID="lbndamlien" runat="server" Text='<%# Bind("TenNhomHang")%>' CommandArgument='<%# Eval("id") %>'></asp:LinkButton>
+                    </li>
+                </ItemTemplate>
+            </asp:Repeater>
+        </ul>
+
+    </div>
+</div>
             </div>
             <div class="col-md-9" style="margin-top: 40px;">
                 <div>

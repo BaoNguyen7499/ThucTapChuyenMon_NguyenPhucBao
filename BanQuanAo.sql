@@ -536,7 +536,7 @@ INSERT [dbo].[devvn_quanhuyen] ([maqh], [name], [type], [matp]) VALUES (N'032', 
 INSERT [dbo].[devvn_quanhuyen] ([maqh], [name], [type], [matp]) VALUES (N'033', N'Quận 9', N'Quận', N'02')
 INSERT [dbo].[devvn_quanhuyen] ([maqh], [name], [type], [matp]) VALUES (N'034', N'Quận 10', N'Quận', N'02')
 INSERT [dbo].[devvn_quanhuyen] ([maqh], [name], [type], [matp]) VALUES (N'035',N'Quận 11', N'Quận', N'02')
-INSERT [dbo].[devvn_quanhuyen] ([maqh], [name], [type], [matp]) VALUES (N'035',N'Quận 12', N'Quận', N'02')
+INSERT [dbo].[devvn_quanhuyen] ([maqh], [name], [type], [matp]) VALUES (N'036',N'Quận 12', N'Quận', N'02')
 
 INSERT [dbo].[devvn_quanhuyen] ([maqh], [name], [type], [matp]) VALUES (N'040', N'Thành phố Cao Bằng', N'Thành phố', N'04')
 INSERT [dbo].[devvn_quanhuyen] ([maqh], [name], [type], [matp]) VALUES (N'042', N'Huyện Bảo Lâm', N'Huyện', N'04')

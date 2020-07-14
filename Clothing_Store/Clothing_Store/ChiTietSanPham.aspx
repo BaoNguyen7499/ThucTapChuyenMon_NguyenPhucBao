@@ -1,7 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="ChiTietSanPham.aspx.cs" Inherits="Clothing_Store.ChiTietSanPham" %>
 
-<%@ Register Src="~/MenuLeft.aspx" TagPrefix="uc1" TagName="MenuLeft"%>
-<%@ Register Src="~/backtopWeb.aspx" TagPrefix="uc1" TagName="backtopWeb"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -26,7 +24,6 @@
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1838823719729580";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-    <link rel="canonical" href="http://quocdinhit.tk" />
     <script>
         window.___gcfg = {
             lang: 'en-US'
@@ -34,7 +31,6 @@
     </script>
 
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <link rel="canonical" href="http://quocdinhit.tk" />
     <script src="https://apis.google.com/js/platform.js" async defer>
     </script>
     <div id="Div3"></div>
@@ -49,11 +45,27 @@
 
 
     <div class="content">
-        <uc1:backtopWeb runat="server" ID="backtopWeb" />
+        <div class="backtop"> <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a> </div>
         <div class="wap_slider">
             <div class="container">
                 <div class="col-md-3">
-                    <uc1:MenuLeft runat="server" ID="MenuLeft" />
+                    <div class="left">
+    <div class="tieudetrai">
+        DANH MỤC SẢN PHẨM
+    </div>
+    <div class="danhmuc">
+        <ul class="side-menu" data-side-menu="data-side-menu">
+            <asp:Repeater ID="remenu" runat="server">
+                <ItemTemplate>
+                     <li>
+                         <asp:LinkButton ID="lbndamlien" runat="server" Text='<%# Bind("TenNhomHang")%>' CommandArgument='<%# Eval("id") %>'></asp:LinkButton>
+                    </li>
+                </ItemTemplate>
+            </asp:Repeater>
+        </ul>
+
+    </div>
+</div>
                 </div>
                 <div class="col-md-9" style="margin-top: 30px;">
                     <div class="chitietsp">
