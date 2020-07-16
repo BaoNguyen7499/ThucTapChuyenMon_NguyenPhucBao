@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
    
     <link href="css/reset.css" rel="stylesheet" />
-    <link rel="SHORTCUT ICON" href="images/logo-title.png" type="image/x-icon" />
+    <link rel="SHORTCUT ICON" href="images/sf.png" type="image/x-icon" />
     <link href="css/slick.css" rel="stylesheet" />
     <link href="css/slick-theme.css" rel="stylesheet" />
     <link href="css/style2.css" rel="stylesheet" />
@@ -61,8 +61,8 @@
             <div class="row row2">
                 <div class=" layout-column col-lg-3 col-md-3 col-sm-12 col-xs-12 left-logo">
                     <h1><a href="TrangChu.aspx">
-                        <img src="../images/logo-title.png" style="margin-left: 10px;" class="logo img-responsive" alt="" /></a></h1>
-                    <span style="font-size: 17px; color: coral; font-weight: bold">Eric shop</span>
+                        <img src="../images/sf.png" style="margin-left: 10px;" class="logo img-responsive" alt="" /></a></h1>
+                    <span style="font-size: 17px; color: coral; font-weight: bold">Shop Fashion (Clothing Store)</span>
                 </div>
                 <!-- search -->
                 <div class="layout-column col-lg-6 col-md-6 col-sm-9 col-xs-9 mid">

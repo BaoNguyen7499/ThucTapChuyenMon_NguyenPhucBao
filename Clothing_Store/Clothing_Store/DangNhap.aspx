@@ -17,7 +17,7 @@
             <asp:Repeater ID="remenu" runat="server">
                 <ItemTemplate>
                      <li>
-                         <asp:LinkButton ID="lbndamlien" runat="server" Text='<%# Bind("TenNhomHang")%>' CommandArgument='<%# Eval("id") %>'></asp:LinkButton>
+                         <asp:LinkButton ID="lbndamlien" runat="server" OnClick="lbndamlien_Click" Text='<%# Bind("TenNhomHang")%>' CommandArgument='<%# Eval("id") %>'></asp:LinkButton>
                     </li>
                 </ItemTemplate>
             </asp:Repeater>

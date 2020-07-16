@@ -118,6 +118,16 @@ namespace Clothing_Store
             ddlquan.DataBind();
         }
 
+        protected void lbndamlien_Click(object sender, EventArgs e)
+        {
+            LinkButton myButton = sender as LinkButton;
+            if (myButton != null)
+            {
+                int id = Convert.ToInt32(myButton.CommandArgument);
+                Response.Redirect("~/SanPham.aspx?IDMenu=" + id + "");
+            }
+        }
+
         protected void btnhuy_Click(object sender, EventArgs e)
         {
             Response.Redirect("TrangChu.aspx");

@@ -2309,7 +2309,7 @@ INSERT [dbo].[tbl_QuanLyMeNu] ([ID], [TenMenu], [Type], [Ord], [Level], [Link], 
 INSERT [dbo].[tbl_QuanLyMeNu] ([ID], [TenMenu], [Type], [Ord], [Level], [Link], [TypeClick], [Icon], [Active]) VALUES (11, N'Quyền', 1, 8, N'00030008', N'./Quyen.aspx', N'_self', NULL, 1)
 INSERT [dbo].[tbl_QuanLyMeNu] ([ID], [TenMenu], [Type], [Ord], [Level], [Link], [TypeClick], [Icon], [Active]) VALUES (12, N'Quảng cáo', 1, 9, N'00030009', N'./QuangCao.aspx', N'_self', NULL, 1)
 INSERT [dbo].[tbl_QuanLyMeNu] ([ID], [TenMenu], [Type], [Ord], [Level], [Link], [TypeClick], [Icon], [Active]) VALUES (13, N'Quản lí  hàng', 1, 4, N'0004', N'#', N'_self', N'fa fa-table fa-fw', 1)
-INSERT [dbo].[tbl_QuanLyMeNu] ([ID], [TenMenu], [Type], [Ord], [Level], [Link], [TypeClick], [Icon], [Active]) VALUES (14, N'Hàng', 1, 1, N'00040001', N'./HangAdminaspx.aspx', N'_self', NULL, 1)
+INSERT [dbo].[tbl_QuanLyMeNu] ([ID], [TenMenu], [Type], [Ord], [Level], [Link], [TypeClick], [Icon], [Active]) VALUES (14, N'Hàng', 1, 1, N'00040001', N'./HangAdmin.aspx', N'_self', NULL, 1)
 INSERT [dbo].[tbl_QuanLyMeNu] ([ID], [TenMenu], [Type], [Ord], [Level], [Link], [TypeClick], [Icon], [Active]) VALUES (15, N'Đặt Hàng', 1, 2, N'00040002', N'./DonHangAdmin.aspx', N'_self', NULL, 1)
 SET IDENTITY_INSERT [dbo].[tbl_QuanLyMeNu] OFF
 INSERT [dbo].[tbl_Quyen] ([id], [TaiKhoan], [MatKhau], [id_NhanVien], [TenQuyen]) VALUES (1, NULL, NULL, 1, N'admin')

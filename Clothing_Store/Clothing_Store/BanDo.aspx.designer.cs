@@ -15,21 +15,12 @@ namespace Clothing_Store
     {
 
         /// <summary>
-        /// backtopWeb control.
+        /// remenu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Clothing_Store.backtopWeb backtopWeb;
-
-        /// <summary>
-        /// MenuLeft control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Clothing_Store.MenuLeft MenuLeft;
+        protected global::System.Web.UI.WebControls.Repeater remenu;
     }
 }

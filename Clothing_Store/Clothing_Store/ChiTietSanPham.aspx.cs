@@ -168,5 +168,15 @@ namespace Clothing_Store
         {
 
         }
+
+        protected void lbndamlien_Click(object sender, EventArgs e)
+        {
+            LinkButton myButton = sender as LinkButton;
+            if (myButton != null)
+            {
+                int id = Convert.ToInt32(myButton.CommandArgument);
+                Response.Redirect("~/SanPham.aspx?IDMenu=" + id + "");
+            }
+        }
     }
 }
