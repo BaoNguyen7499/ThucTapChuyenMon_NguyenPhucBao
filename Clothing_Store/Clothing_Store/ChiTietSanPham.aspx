@@ -191,7 +191,7 @@
                                 <%--<button type="button" class="btn btn-success">MUA NGAY</button>--%>
                             </div>
                             <div>
-                                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+                               <!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
                                 <div class="fb-send" data-href="https://www.facebook.com/PhungQuocDinh"></div>
                                 <span>
                                        <g:plusone size="smal" data-annotation:"bubble">
@@ -199,7 +199,7 @@
                                     </g:plusone>
                                 </span>
                                 
-
+                                -->
                             </div>
                         </div>
 
@@ -236,7 +236,7 @@
                                 <div class="clearfix"></div>
 
                             </div>
-                            <div class="fb-comments" data-href="https://www.facebook.com/shopthoitrangxinh/posts/1060590080716436" data-numposts="5" data-width="800px;"></div>
+                           <!-- <div class="fb-comments" data-href="https://www.facebook.com/shopthoitrangxinh/posts/1060590080716436" data-numposts="5" data-width="800px;"></div>-->
                         </div>
                     </div>
                 </div>

@@ -6,6 +6,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Net.Mail;
+using System.Net;
 
 namespace Clothing_Store
 {
@@ -183,7 +185,20 @@ namespace Clothing_Store
                 }
             }
 
-            Response.Write("<script>alert('Đặt hàng thành công!!')</script>");
+            Response.Write("<script>alert('Đặt hàng thành công!! Cảm ơn bạn nhiều nhé!! ')</script>");
+           
+                MailMessage message = new MailMessage("nguyenphucbao07041999@gmail.com",txtemail.Text, "Shop Fashion(Clothing Store) ", "Thank you so much for ordering our products. We will deliver them to you as quickly as possible");
+                message.IsBodyHtml = true;
+
+                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                client.EnableSsl = true;
+                client.UseDefaultCredentials = false;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.Credentials = new System.Net.NetworkCredential("nguyenphucbao07041999@gmail.com", "Baonguyen741999@!");
+                client.Send(message);
+           
+            
+
             Session["GioHang"] = null;
             Session["slspgiohang"] = null;
             lblsl = (Label)Master.FindControl("lblslgiohang");
