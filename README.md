@@ -1,11 +1,13 @@
 # ThucTapChuyenMon_NguyenPhucBao
 Thành viên: Nguyễn Phúc Bảo / MSV:5851071004
 Đề tài: Bán quần áo - Web app
-Giảng viên: Nguyên Lê Minh
+Giảng viên: Nguyên Lê Minh.
+
 Phần 1: Công nghệ sử dụng
 + Visual Studio 2019
 + ASP.NET Webform
 + Microsoft SQL Server
+
 Phần 2: Mục tiêu đạt được:
 Xây dựng cơ sở dữ liệu Bán quần áo.(hoàn thành)
 Mô hình 3 layers.(hoàn thành)
