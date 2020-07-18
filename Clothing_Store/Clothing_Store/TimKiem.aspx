@@ -23,7 +23,26 @@
                 </ItemTemplate>
             </asp:Repeater>
         </ul>
+    </div>
+    <div style="margin-top: 300px; font-size: large ; color:coral " >
+        <h1>Tìm kiếm theo giá</h1>
+    </div> 
+    <div runat="server">
+        <ul >
+            <li style="margin-top:20px ; margin-left: 30px">
+                <input type="checkbox" />
+                <asp:LinkButton ID="thapnhat" runat="server" OnClick="thapnhat_Click">Trên 50k</asp:LinkButton>
+            </li>
+             <li style="margin-top:60px ; margin-left: -71px">
+                <input type="checkbox" />
+                <asp:LinkButton ID="trungbinh" runat="server" OnClick="trungbinh_Click">Trên 150k</asp:LinkButton>
+            </li>
+             <li style="margin-top:100px ; margin-left: -79px">
+                <input type="checkbox" id="Tren250" onclick=""/>
+                <asp:LinkButton ID="cao" runat="server" OnClick="cao_Click">Trên 250k</asp:LinkButton>
+            </li>
 
+        </ul>
     </div>
 </div>
                 </div>

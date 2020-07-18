@@ -17,9 +17,10 @@ namespace Clothing_Store
 
             List<Entity.SanPham> lst = new List<Entity.SanPham>();
             lst = SanPhamService.SanPham_GetByTop("", " [dbo].[fuChuyenCoDauThanhKhongDau](TenHang) like N'%' +dbo.fuChuyenCoDauThanhKhongDau('" + TenspSearch + "')+'%' AND Active='True'", "");
-            // dtltimkiem.DataSource = db.tbl_Hangs.Where(x=> x.TenHang.Contains(TenspSearch)).ToList();
+
             dtltimkiem.DataSource = lst;
             dtltimkiem.DataBind();
+          
 
             remenu.DataSource = NhomHangService.NhomHang_GetByTop("", " Active='True'", "");
             remenu.DataBind();
@@ -48,6 +49,21 @@ namespace Clothing_Store
                 int id = Convert.ToInt32(myButton.CommandArgument);
                 Response.Redirect("~/SanPham.aspx?IDMenu=" + id + "");
             }
+        }
+
+        protected void thapnhat_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void trungbinh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void cao_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

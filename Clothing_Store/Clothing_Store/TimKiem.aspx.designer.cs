@@ -24,6 +24,33 @@ namespace Clothing_Store
         protected global::System.Web.UI.WebControls.Repeater remenu;
 
         /// <summary>
+        /// thapnhat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton thapnhat;
+
+        /// <summary>
+        /// trungbinh control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton trungbinh;
+
+        /// <summary>
+        /// cao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton cao;
+
+        /// <summary>
         /// dtltimkiem control.
         /// </summary>
         /// <remarks>

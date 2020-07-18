@@ -8,7 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net.Mail;
 using System.Net;
-
+using System.Drawing;
 namespace Clothing_Store
 {
     public partial class ThanhToan : System.Web.UI.Page
@@ -186,18 +186,49 @@ namespace Clothing_Store
             }
 
             Response.Write("<script>alert('Đặt hàng thành công!! Cảm ơn bạn nhiều nhé!! ')</script>");
-           
-                MailMessage message = new MailMessage("nguyenphucbao07041999@gmail.com",txtemail.Text, "Shop Fashion(Clothing Store) ", "Thank you so much for ordering our products. We will deliver them to you as quickly as possible");
-                message.IsBodyHtml = true;
 
-                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
-                client.EnableSsl = true;
-                client.UseDefaultCredentials = false;
-                client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                client.Credentials = new System.Net.NetworkCredential("nguyenphucbao07041999@gmail.com", "Baonguyen741999@!");
-                client.Send(message);
-           
+            // MailMessage message = new MailMessage("nguyenphucbao07041999@gmail.com",txtemail.Text, "Shop Fashion(Clothing Store) ",grvsanpham.Rows[0].Cells[0].Text);
+            // message.IsBodyHtml = true;
+
+            //  SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+            //client.EnableSsl = true;
+            //client.UseDefaultCredentials = false;
+            //client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            //client.Credentials = new System.Net.NetworkCredential("nguyenphucbao07041999@gmail.com", "Baonguyen741999@!");
+            //client.Send(message);
             
+            for (int i = 0; i < tbGioHang.Rows.Count; i++)
+            {
+                var from = "nguyenphucbao07041999@gmail.com";
+                var to = txtemail.Text;
+                const string Password = "Baonguyen741999@!";
+                string mail_subject = "Clothing Store";
+                string mail_message = "From : Clothing Store" + "\n";
+                mail_message += "From : nguyenphucbao07041999@gmail.com " + "\n";
+                mail_message += "Thông tin mua hàng của quý khách" + "\n";
+                string tenSP = tbGioHang.Rows[i]["TenSP"].ToString();
+                Id_SP = SanPhamService.SanPham_GetByTop("", " TenHang=N'" + tenSP + "'", "")[0].Id;
+
+                mail_message +="ID sản phẩm : " +Id_SP+"\n";
+                mail_message +="Tên sản phẩm :" + tbGioHang.Rows[i]["TenSP"].ToString()+"\n";
+                mail_message +="Size: " +tbGioHang.Rows[i]["Size"].ToString()+"\n";
+                mail_message +="Số lượng: " +tbGioHang.Rows[i]["SoLuong"].ToString()+"\n";
+                mail_message +="Tổng giá: "  +tbGioHang.Rows[i]["TongGia"].ToString()+"\n";
+                mail_message +="Giá: " +tbGioHang.Rows[i]["Gia"].ToString()+"\n";
+                var smtp = new SmtpClient();
+                {
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.Port = 587;
+                    smtp.EnableSsl = true;
+                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtp.Credentials = new NetworkCredential(from, Password);
+                    smtp.Timeout = 10000;
+                }
+                smtp.Send(from, to, mail_subject, mail_message);
+                
+            }
+
+
 
             Session["GioHang"] = null;
             Session["slspgiohang"] = null;

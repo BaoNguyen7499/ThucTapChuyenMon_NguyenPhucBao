@@ -138,7 +138,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-5">
-                                            Tên Khách Hàng
+                                            ID Khách Hàng
                                         </div>
                                         <div class="col-md-7">
                                             <asp:Label ID="lblId_KhachHang" runat="server" Text="Label"></asp:Label>

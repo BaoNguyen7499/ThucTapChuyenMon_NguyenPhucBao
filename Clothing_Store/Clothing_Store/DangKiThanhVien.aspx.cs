@@ -135,6 +135,7 @@ namespace Clothing_Store
                 int id = Convert.ToInt32(myButton.CommandArgument);
                 Response.Redirect("~/SanPham.aspx?IDMenu=" + id + "");
             }
+
         }
     }
 }
