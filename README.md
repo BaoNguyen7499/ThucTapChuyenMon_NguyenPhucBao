@@ -1,6 +1,8 @@
 # ThucTapChuyenMon_NguyenPhucBao
 Thành viên: Nguyễn Phúc Bảo / MSV:5851071004
+
 Đề tài: Bán quần áo - Web app
+
 Giảng viên: Nguyên Lê Minh.
 
 
@@ -30,9 +32,9 @@ Phần 2: Mục tiêu đạt được:
 + Chat trực tuyến chưa (chưa hoàn thành)
 + Liên hệ ngoại tuyến(hoàn thành)
 
-+Tài khoản admin:
--tên tài khoản: admin
--mật khẩu: admin
++ Tài khoản admin:
+- tên tài khoản: admin
+- mật khẩu: admin
 
 Em cảm ơn thầy!
 
