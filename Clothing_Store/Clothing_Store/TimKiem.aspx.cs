@@ -20,7 +20,6 @@ namespace Clothing_Store
 
             dtltimkiem.DataSource = lst;
             dtltimkiem.DataBind();
-          
 
             remenu.DataSource = NhomHangService.NhomHang_GetByTop("", " Active='True'", "");
             remenu.DataBind();
@@ -53,7 +52,7 @@ namespace Clothing_Store
 
         protected void thapnhat_Click(object sender, EventArgs e)
         {
-            
+          
         }
 
         protected void trungbinh_Click(object sender, EventArgs e)

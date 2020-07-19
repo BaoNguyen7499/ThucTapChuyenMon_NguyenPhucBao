@@ -88,19 +88,29 @@ namespace Clothing_Store
                 {
                     lblcheck.Text = "Tài khoản và mật khẩu không đúng!!";
                 }
-            }
-            else
-            {
-                List<Entity.NhanVien> lst = NhanVienService.NhanVien_GetByTop("", " UserName='" + txtusername.Text + "' AND Password='" + txtpassword.Text + "' ", "");
-                if (lst.Count > 0)
+
+                List<Entity.NhanVien> lst1 = NhanVienService.NhanVien_GetByTop("", " UserName='" + txtusername.Text + "' AND Password='" + txtpassword.Text + "' and id_quyen = 1", "");
+                if (lst1.Count == 0)
                 {
-                    Session["display_name"] = lst[0].UserName;
-                    Session["TenDangNhap"] = lst[0].UserName;
-                    Response.Redirect("TrangChu.aspx");
+                    lblcheck.Text = "Tài khoản hoặc mật khẩu không đúng!!";
                 }
                 else
                 {
-                    lblcheck.Text = "Tài khoản và mật khẩu không đúng!!";
+                    Session["TenDangNhap"] = lst1;
+                    Response.Redirect("HangAdmin.aspx");
+                }
+            }
+            else
+            {
+                List<Entity.NhanVien> lst = NhanVienService.NhanVien_GetByTop("", " UserName='" + txtusername.Text + "' AND Password='" + txtpassword.Text + "' and id_quyen = 1 ", "");
+                if (lst.Count == 0)
+                {
+                    lblcheck.Text = "Tài khoản hoặc mật khẩu không đúng!!";
+                }
+                else
+                {
+                    Session["TenDangNhap"] = lst;
+                    Response.Redirect("HangAdmin.aspx");
                 }
             }
         }
