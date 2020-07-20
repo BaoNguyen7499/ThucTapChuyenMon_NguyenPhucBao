@@ -44,6 +44,12 @@ baonguyen.somee.com/Login.aspx(đăng nhập trang quản trị)
 - mật khẩu: admin
 (không thể tạo thêm tài khoản admin khác, em chỉ xét duy nhất 1 tài khoản admin có id quyền : 1 được phép truy cập vào trang này)
 
++ Đăng nhập mail theo link này :   https://accounts.google.com/b/0/DisplayUnlockCaptcha 
++ Email của em : nguyenphucbao07041999@gmail.com  
++ Hiển thị ra trang sau đó nhấp vào nút tiếp tục.
++ Hiển thị dòng chữ này : Đã cho phép truy cập tài khoản : là hoàn thành việt set up mail
+
+
 + Xin thầy đừng nhấp vào cái ảnh sản phẩm, hãy nhấp vào cái button(xem chi tiết).Nếu thầy nhấp vào mấy cái ảnh sản phẩm và banner sẽ bị lỗi vì em tính làm màu mè mà không kịp.
 + Có thể tạo tài khoản khách hàng và sử dụng mua hàng.
 + Có thể mua hàng, nhập đúng thông tin theo mẫu, nhập đúng mail sẽ nhận được mail từ website.
