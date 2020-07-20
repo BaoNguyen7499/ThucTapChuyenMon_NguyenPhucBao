@@ -37,6 +37,7 @@ Phần 3: Chức năng chưa hoàn thành.
 ##Hướng dẫn sử dụng.
 
 baonguyen.somee.com/Trangchu.aspx
+
 baonguyen.somee.com/Login.aspx(đăng nhập trang quản trị)
 + Tài khoản admin:
 - tên tài khoản: admin
