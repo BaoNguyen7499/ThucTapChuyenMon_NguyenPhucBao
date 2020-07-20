@@ -37,15 +37,17 @@ Phần 3: Chức năng chưa hoàn thành.
 ##Hướng dẫn sử dụng.
 
 baonguyen.somee.com/Trangchu.aspx
-
+baonguyen.somee.com/Login.aspx(đăng nhập trang quản trị)
 + Tài khoản admin:
 - tên tài khoản: admin
 - mật khẩu: admin
-+ Xin thầy đừng nhấp vào cái ảnh sản phẩm hãy nhấp vào cái button(xem chi tiết).Nếu thầy nhấp vào mấy cái ảnh sản phẩm sẽ bị lỗi vì em tính làm màu mè mà không kịp.
+(không thể tạo thêm tài khoản admin khác, em chỉ xét duy nhất 1 tài khoản admin có id quyền : 1 được phép truy cập vào trang này)
+
++ Xin thầy đừng nhấp vào cái ảnh sản phẩm, hãy nhấp vào cái button(xem chi tiết).Nếu thầy nhấp vào mấy cái ảnh sản phẩm và banner sẽ bị lỗi vì em tính làm màu mè mà không kịp.
 + Có thể tạo tài khoản khách hàng và sử dụng mua hàng.
 + Có thể mua hàng, nhập đúng thông tin theo mẫu, nhập đúng mail sẽ nhận được mail từ website.
-+ về phía trang quản trị em làm bị dư phân quản trị hệ thống. Nên không có chức năng.
-+ Có thể quản lý sản phẩm (thêm, sữa, xóa), Xem chi tiết đơn hàng đặt
++ Về phía trang quản trị em làm bị dư phân quản trị hệ thống. Nên không có chức năng.
++ Có thể quản lý sản phẩm (thêm, sữa, xóa), Xem chi tiết đơn hàng đặt (vì host free somee.com nó theo múi giờ của Hoa kỳ nên ngày sẽ lệch với chúng ta)
 
 Em cảm ơn thầy!
 
